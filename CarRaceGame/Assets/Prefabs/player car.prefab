@@ -320,11 +320,12 @@ GameObject:
   - component: {fileID: 8889691394829619184}
   - component: {fileID: 6826529319495286915}
   - component: {fileID: 7937142291187151847}
-  - component: {fileID: 68662625659517621}
   - component: {fileID: 1752599280047459492}
+  - component: {fileID: 68662625659517621}
+  - component: {fileID: 5271903132296990434}
   m_Layer: 0
   m_Name: player car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,6 +409,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!136 &1752599280047459492
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8462138444626262617}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.70934373
+  m_Height: 2.383754
+  m_Direction: 2
+  m_Center: {x: -0.01751852, y: 0.39841175, z: -0.044151306}
 --- !u!114 &68662625659517621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,17 +457,17 @@ MonoBehaviour:
   m_isDrifting: 0
   m_isGrounded: 0
   data: {x: 0, y: 0, z: 0}
---- !u!136 &1752599280047459492
-CapsuleCollider:
+--- !u!114 &5271903132296990434
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8462138444626262617}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.70934373
-  m_Height: 2.383754
-  m_Direction: 2
-  m_Center: {x: -0.01751852, y: 0.39841175, z: -0.044151306}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91595f96afecf3c4ba83703fa34b4257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CurrentLap: 0
+  _CurrentWaypoint: 0
